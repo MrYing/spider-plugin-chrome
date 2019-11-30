@@ -1,0 +1,31 @@
+{
+
+	"manifest_version":2,
+	"name":"spider",
+	"description":"电商数据采集助手",
+	"version":"1.0.0",
+
+
+	"permissions":[
+		"cookies",
+		"tabs",
+		"https://s.taobao.com/search",
+		"https://sycm.taobao.com/portal/home.htm",
+		"http://spider.cokebook.xyz/"
+	],
+
+	"background":{
+
+		"scripts":["js/jquery-3.2.0.min.js","js/bg/index.js"]
+	},
+	
+	"content_scripts": [
+	    {
+	      "matches": ["https://s.taobao.com/search*", "https://sycm.taobao.com/*"],
+	      "js": ["js/jquery-3.2.0.min.js", "js/fp/index.js"]
+	    }
+  	]
+
+
+
+}
