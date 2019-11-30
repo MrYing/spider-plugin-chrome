@@ -22,7 +22,8 @@ npm install --global gulp-uglify
 
 ```bash
 
-	gulp 
+	cd ./  # 进入项目目录
+	gulp   # 执行本命令
 
 ```
 
