@@ -5,24 +5,24 @@
 
 ### 构建
 
-- 1 项目采用 gulp 构建,所以为了你需要优先安装 nodejs
-- 2 安装 gulp-cli 以及 gulp
-- 3 安装下面三个gulp 插件
+    项目采用 gulp 构建,所以为了你需要优先安装 nodejs
+
 
 ```bash
 
+npm install gulp
 npm install --global gulp-rename
 npm install --global gulp-uglify
-npm install --global gulp-crx-pack
 
 ```
 
-### 打包
+### 打包 
 
+> 开发时可以直接对 src 目录进行打包,  对于正式环境推荐优先构建以获得精简后的目录
 
 ```bash
 
-	gulp  &&  gulp build
+	gulp 
 
 ```
 
